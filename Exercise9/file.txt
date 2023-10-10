@@ -1,0 +1,9 @@
+What Are Python Frameworks?
+Python web frameworks are a collection of modules or packages which help developers in writing a web application in the Python programming language.
+
+When they choose Python for rapid development, they don’t have to worry about the use of low-level facts, like multiple protocols, thread management, or sockets.
+
+Frameworks automate the performance of basic solutions that provide developers the adaptability to concentrate on websites instead of the general routine processes.
+
+The web development frameworks give website developers, web designers, system administrators, and Linux operators the freedom to develop a structure by providing a default model for app structuring that is quick, consistent, and effortlessly maintainable.
+
