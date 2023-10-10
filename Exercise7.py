@@ -1,4 +1,4 @@
-from datetime import date, datetime
+from datetime import date
 
 date_components = input("Enter date formatted as YYYY-MM-DD: ").split("-")
 year, month, day = [int(item) for item in date_components]
