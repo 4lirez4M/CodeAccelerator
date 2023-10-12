@@ -1,0 +1,6 @@
+course1: 12
+course2: 13
+course2: 17
+course2: 18
+course2: 19
+total average: 15.8
