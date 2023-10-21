@@ -30,18 +30,30 @@ employees = [
                 'salary': 140000
             }
 ]
-os.mkdir('Programming')
-os.mkdir('security')
+if os.path.exists("./Programming"):
+    print("Programming directory exists")
+else:
+    os.mkdir('Programming')
+if os.path.exists("./security"):
+    print("security directory exists")
+else:
+    os.mkdir('security')
 for item in employees:
     filename = f"./{item['type']}/{item['name']}/{item['name']}.json"
     if item['type'] == "Programming":
-        os.mkdir(f"./Programming/{item['name']}")
-        with open(filename, "w") as f:
-            json.dump(item, f, indent=2)
+        if os.path.exists(f"./Programming/{item['name']}"):
+            print(f"{item['name']} directory exists")
+        else:
+            os.mkdir(f"./Programming/{item['name']}")
+            with open(filename, "w") as f:
+                json.dump(item, f, indent=2)
 
     else:
-        os.mkdir(f"./security/{item['name']}")
-        with open(filename, "w") as f:
-            json.dump(item, f, indent=2)
+        if os.path.exists(f"./security/{item['name']}"):
+            print(f"{item['name']} directory exists")
+        else:
+            os.mkdir(f"./security/{item['name']}")
+            with open(filename, "w") as f:
+                json.dump(item['name'], f, indent=2)
 
 
